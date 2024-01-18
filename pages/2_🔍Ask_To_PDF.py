@@ -89,9 +89,21 @@ def user_input(user_question):
     st.write("Reply: ", st.session_state.output_text)
 
 def main():
-    
+
+
     st.header("Ask_to_PDF- Start chat")
-    
+
+
+    pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
+
+    if st.button("Train & Process"):
+        if st.session_state.pdf_docs:
+            with st.spinner("🤖Processing..."):
+                raw_text = get_pdf_text(st.session_state.pdf_docs)
+                text_chunks = get_text_chunks(raw_text)
+                get_vector_store(text_chunks)
+                st.success("Done, AI trained")
+
     user_question = st.text_input("Ask a Question from the PDF Files")
 
     if st.session_state.user_question != user_question:
@@ -104,18 +116,11 @@ def main():
     # Removed the sidebar
 
     # Display the file uploader outside the sidebar
-    pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
 
     if pdf_docs:
         st.session_state.pdf_docs = pdf_docs
 
-    if st.button("Submit & Process"):
-        if st.session_state.pdf_docs:
-            with st.spinner("Processing..."):
-                raw_text = get_pdf_text(st.session_state.pdf_docs)
-                text_chunks = get_text_chunks(raw_text)
-                get_vector_store(text_chunks)
-                st.success("Done")
+    
     st.write("\n\nProject by Suraj Sanap")
 
 if __name__ == "__main__":
