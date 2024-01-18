@@ -32,7 +32,7 @@ Ask_To_PDF()
 ATS()
 ResumeAnalyzer()
 
-st.text("-                           This project is by Suraj Sanap                  -")
+st.text("-                 This project is by Suraj Sanap                  -")
 st.write("\n")
 
 col1, col2, col3 = st.columns([1,1,1])
