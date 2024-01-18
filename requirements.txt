@@ -1,0 +1,10 @@
+streamlit  # Frontend
+google-generativeai  # For Google Gemini
+python-dotenv  # To load all env variable
+langchain  # Read the pdf
+PyPDF2  # Reading pdf
+faiss-cpu  # For parallel processing (CPU used because small files, GPU for large)
+langchain_google_genai  # with the help of Langchain, you can access API
+pdf2image
+poppler-utils
+streamlit_lottie

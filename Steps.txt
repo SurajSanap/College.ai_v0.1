@@ -1,0 +1,18 @@
+
+step 1. Create vEnv
+step 2. create .env and add API in it
+step 3. Create requirements.txt
+step 4. app.py and start code
+
+
+Process_Flow
+'''
+#Text is 1. extracted from PDFs,
+         2. split into chunks, and 
+         3. converted into vectors.
+
+         4. chain processes user input, 
+         5. searches for similar text chunks,
+         6. generates responses.
+
+'''
