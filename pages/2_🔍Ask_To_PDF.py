@@ -57,7 +57,8 @@ def get_conversational_chain():
     5. If information not found then search on google and then provide reply.
     6. (but then mention the reference name)
     7. If 'Summerize' word is used in input then Summerize the context.
-    8. i input is: Hello reply: Hey hi Suraj.\n\n
+    8. i input is: 'Hello', reply: Hey hi Suraj.\n\n
+    9. Use Markdown font to make text more readable
     Context:\n {context}?\n
     Question: \n{question}\n
 
@@ -110,7 +111,7 @@ def main():
         animation = json.load(anim_source)
     st_lottie(animation, 1, True, True, "high", 100, -200)
 
-    st.text("______________If AI is trained, then only write your queries._______________")
+    st.text("______________If <AI is trained>, then only write your queries._______________")
     #input query
     user_question = st.text_input("Ask a Question from the PDF Files")
 
