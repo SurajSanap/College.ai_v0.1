@@ -54,4 +54,7 @@ with col2:
     st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
 with col3:
     if st.button('Thankyou'):
-        show_thank_you_emoji()
+        try:
+            show_thank_you_emoji()
+        except:
+            print("💝")
