@@ -8,7 +8,26 @@ with open('About.json') as anim_source:
     animation = json.load(anim_source)
 st_lottie(animation, 1, True, True, "high", 200, -200)
 
-st.text("___________________________________________________________")
+st.text("-                 This project is by Suraj Sanap                  -")
+st.write("\n")
+
+col1, col2, col3 = st.columns([1,1,1])
+
+with col1:
+    st.link_button('GitHub', "https://github.com/SurajSanap")
+with col2:
+    st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
+with col3:
+    if st.button('Thankyou'):
+        try:
+            show_thank_you_emoji()
+        except:
+            print("💝")
+
+st.text("_______________________________________________________________________________")
+st.write("\n")
+st.write("\n")
+
 st.header("Page:")
 def Ask_To_PDF():
     st.markdown("1. Ask_To_PDF")
@@ -43,23 +62,6 @@ def show_thank_you_emoji():
 Ask_To_PDF()
 ATS()
 ResumeAnalyzer()
-st.write("\n")
-st.write("\n")
-st.write("\n")
-st.write("\n")
 
-st.text("-                 This project is by Suraj Sanap                  -")
-st.write("\n")
 
-col1, col2, col3 = st.columns([1,1,1])
 
-with col1:
-    st.link_button('GitHub', "https://github.com/SurajSanap")
-with col2:
-    st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
-with col3:
-    if st.button('Thankyou'):
-        try:
-            show_thank_you_emoji()
-        except:
-            print("💝")
