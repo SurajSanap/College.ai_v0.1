@@ -3,10 +3,12 @@ from streamlit_lottie import st_lottie
 import json
 
 
-st.title("About us")
+st.title("About")
 with open('About.json') as anim_source:
     animation = json.load(anim_source)
 st_lottie(animation, 1, True, True, "high", 200, -200)
+
+st.write(___________________________________________________________)
 st.header("Page:")
 def Ask_To_PDF():
     st.markdown("1. Ask_To_PDF")
