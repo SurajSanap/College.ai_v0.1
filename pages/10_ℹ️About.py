@@ -2,37 +2,44 @@ import streamlit as st
 from streamlit_lottie import st_lottie 
 import json
 
-
 st.title("About")
 
-st.header("               Page:                ")
+st.header("Page:")
 def Ask_To_PDF():
     st.markdown("1. Ask_To_PDF")
     with open('pdf.json') as anim_source:
         animation = json.load(anim_source)
         st_lottie(animation, 1, True, True, "high", 100, -200)
 
-    st.write("This Service provide you the functionality to train the AI_Genrative model \n on your PDF and then Apply your query on it.")
+    st.write("This service provides you the functionality to train the AI_Generative model \n on your PDF and then apply your query on it.")
 
 def ATS():
     st.markdown("2. ATS")
     with open('ATS.json') as anim_source:
         animation = json.load(anim_source)
         st_lottie(animation, 1, True, True, "high", 100, -200)
-    st.write("Check your resume is suit for job or not,\n Check the Job is good for you or not, \n Get the recomendation besed on your Resume and Job Description.")
+    st.write("Check if your resume is suitable for the job or not,\n Check if the job is good for you or not, \n Get recommendations based on your resume and job description.")
 
-    
 def ResumeAnalyzer():
     st.markdown("3. ResumeAnalyzer")
     with open('Resume.json', 'r', encoding='utf-8') as anim_source:
         animation = json.load(anim_source)
         st_lottie(animation, 1, True, True, "high", 100, -200)
     
-    st.write("Check your resume's Goodness \n Get the recomendation skill, field, cources and etc")
+    st.write("Check your resume's goodness \n Get recommendations for skills, fields, courses, etc.")
 
 Ask_To_PDF()
 ATS()
 ResumeAnalyzer()
-st.text("-                           This is project by Suraj Sanap                  -")
+
+st.text("-                           This project is by Suraj Sanap                  -")
 st.write("\n")
-st.link_button('GitHub',"https://github.com/SurajSanap")
+
+col1, col2, col3 = st.columns([1,1,1])
+
+with col1:
+    st.link_button('GitHub', "https://github.com/SurajSanap")
+with col2:
+    st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
+with col3:
+    st.button('Thankyou')
