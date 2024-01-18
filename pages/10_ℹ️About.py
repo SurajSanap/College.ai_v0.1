@@ -2,8 +2,8 @@ import streamlit as st
 from streamlit_lottie import st_lottie 
 import json
 
-
-st.title("About")
+a = "About: "
+st.title("a")
 with open('About.json') as anim_source:
     animation = json.load(anim_source)
 st_lottie(animation, 1, True, True, "high", 200, -200)
@@ -17,8 +17,8 @@ col1, col2, col3 = st.columns([1,1,1])
 def show_thank_you_emoji():
     # Display 10 heart emojis
     hearts = " ❤️" * 3
-    st.markdown("❤️")
-    st.title("💝💝💝")
+    a = "💝"
+   
 
 
 with col1:
