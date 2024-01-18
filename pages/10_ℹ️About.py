@@ -28,7 +28,7 @@ st.text("_______________________________________________________________________
 st.write("\n")
 st.write("\n")
 
-st.header("Page:")
+st.header("Page info:")
 def Ask_To_PDF():
     st.markdown("1. Ask_To_PDF")
     with open('pdf.json') as anim_source:
