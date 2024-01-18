@@ -107,7 +107,7 @@ def main():
     #anumatin Line.json
     with open('line.json') as anim_source:
         animation = json.load(anim_source)
-    st_lottie(animation, 1, True, True, "high", 300, 200)
+    st_lottie(animation, 1, True, True, "high", 100, -200)
 
 
     #input query
