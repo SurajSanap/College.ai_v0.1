@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie 
 import json
 
-st.title("           About               ")
+st.title("_           About               _")
 
 st.header("Page:")
 def Ask_To_PDF():
