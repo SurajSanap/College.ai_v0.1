@@ -18,13 +18,7 @@ def show_thank_you_emoji():
     # Display 10 heart emojis
     hearts = " ❤️" * 3
     st.markdown("❤️")
-    time.sleep(2)
-    st.markdown("❤️")
-    time.sleep(2)
-    st.markdown("❤️")
-    time.sleep(2)
-    st.markdown("❤️")
-    time.sleep(2)
+    st.title("💝💝💝")
 
 
 with col1:
