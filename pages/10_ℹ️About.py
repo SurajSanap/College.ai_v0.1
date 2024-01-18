@@ -15,9 +15,7 @@ col1, col2, col3 = st.columns([1,1,1])
 
 
 def show_thank_you_emoji():
-    # Display 10 heart emojis
-    hearts = " ❤️" * 3
-    a = "💝"
+    st.text("💖")
    
 
 
