@@ -31,6 +31,10 @@ def ResumeAnalyzer():
 Ask_To_PDF()
 ATS()
 ResumeAnalyzer()
+st.write("\n")
+st.write("\n")
+st.write("\n")
+st.write("\n")
 
 st.text("-                 This project is by Suraj Sanap                  -")
 st.write("\n")
