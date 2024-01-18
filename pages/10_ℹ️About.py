@@ -34,8 +34,6 @@ def show_thank_you_emoji():
     st.markdown(f"Thank you! {hearts}")
     # Wait for 2 seconds
     time.sleep(2)
-    # Clear the content
-    st.empty()
 
 Ask_To_PDF()
 ATS()
