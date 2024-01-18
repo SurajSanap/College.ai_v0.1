@@ -13,6 +13,15 @@ st.write("\n")
 
 col1, col2, col3 = st.columns([1,1,1])
 
+
+def show_thank_you_emoji():
+    # Display 10 heart emojis
+    hearts = " ❤️" * 3
+    st.markdown(f"{hearts}")
+    # Wait for 2 seconds
+    time.sleep(2)
+
+
 with col1:
     st.link_button('GitHub', "https://github.com/SurajSanap")
 with col2:
@@ -52,12 +61,6 @@ def ResumeAnalyzer():
     
     st.write("Check your resume's goodness \n Get recommendations for skills, fields, courses, etc.")
 
-def show_thank_you_emoji():
-    # Display 10 heart emojis
-    hearts = " ❤️" * 3
-    st.markdown(f"{hearts}")
-    # Wait for 2 seconds
-    time.sleep(2)
 
 Ask_To_PDF()
 ATS()
