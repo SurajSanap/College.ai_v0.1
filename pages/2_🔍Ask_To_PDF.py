@@ -102,14 +102,15 @@ def main():
                 raw_text = get_pdf_text(st.session_state.pdf_docs)
                 text_chunks = get_text_chunks(raw_text)
                 get_vector_store(text_chunks)
-                st.success("Done, AI trained")
-                
+                st.success("Done, AI is trained")
+
+    
     #anumatin Line.json
     with open('line.json') as anim_source:
         animation = json.load(anim_source)
     st_lottie(animation, 1, True, True, "high", 100, -200)
 
-
+    st.write("If AI is trained, then only write your queries.")
     #input query
     user_question = st.text_input("Ask a Question from the PDF Files")
 
