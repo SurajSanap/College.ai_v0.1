@@ -30,7 +30,7 @@ def ResumeAnalyzer():
 
 def show_thank_you_emoji():
     # Display 10 heart emojis
-    hearts = " ❤️" * 10
+    hearts = " ❤️" * 3
     st.markdown(f"{hearts}")
     # Wait for 2 seconds
     time.sleep(2)
