@@ -128,7 +128,7 @@ def main():
         st.session_state.pdf_docs = pdf_docs
 
     
-    st.write("\n\nProject by Suraj Sanap")
+    st.footer("\n\nProject by Suraj Sanap")
 
 if __name__ == "__main__":
     main()
