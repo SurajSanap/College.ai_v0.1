@@ -3,7 +3,7 @@ from streamlit_lottie import st_lottie
 import json
 
 a = "About: "
-st.title("a")
+st.title(a)
 with open('About.json') as anim_source:
     animation = json.load(anim_source)
 st_lottie(animation, 1, True, True, "high", 200, -200)
