@@ -17,8 +17,13 @@ col1, col2, col3 = st.columns([1,1,1])
 def show_thank_you_emoji():
     # Display 10 heart emojis
     hearts = " ❤️" * 3
-    st.markdown(f"{hearts}")
-    # Wait for 2 seconds
+    st.markdown("❤️")
+    time.sleep(2)
+    st.markdown("❤️")
+    time.sleep(2)
+    st.markdown("❤️")
+    time.sleep(2)
+    st.markdown("❤️")
     time.sleep(2)
 
 
