@@ -28,6 +28,15 @@ def ResumeAnalyzer():
     
     st.write("Check your resume's goodness \n Get recommendations for skills, fields, courses, etc.")
 
+def show_thank_you_emoji():
+    # Display 10 heart emojis
+    hearts = " ❤️" * 10
+    st.markdown(f"Thank you! {hearts}")
+    # Wait for 2 seconds
+    time.sleep(2)
+    # Clear the content
+    st.empty()
+
 Ask_To_PDF()
 ATS()
 ResumeAnalyzer()
@@ -46,4 +55,5 @@ with col1:
 with col2:
     st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
 with col3:
-    st.button('Thankyou')
+    if st.button('Thankyou'):
+        show_thank_you_emoji()
