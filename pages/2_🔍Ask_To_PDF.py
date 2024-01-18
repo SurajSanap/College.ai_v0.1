@@ -105,8 +105,8 @@ def main():
                 st.success("Done, AI is trained")
 
     
-    #anumatin Line.json
-    with open('line.json') as anim_source:
+    #animation Robot.json
+    with open('Robot.json') as anim_source:
         animation = json.load(anim_source)
     st_lottie(animation, 1, True, True, "high", 100, -200)
 
